@@ -1,0 +1,33 @@
+project:
+   type: website
+   output-dir: docs
+
+website:
+   title: "After Eight Days"
+   search:
+      location: navbar
+      type: overlay
+   sidebar:
+      style: "docked"
+      # contents:
+   navbar:
+      background: secondary
+      left:
+         - text: "Menu"
+           menu:
+              - about.qmd
+              - talks.qmd
+      right:
+         - icon: github
+           href: https://github.com/
+         - icon: twitter
+           href: https://twitter.com
+      pinned: true
+      page-navigation: true
+      page-footer: "Copyright 2021, Norah Jones"
+format:
+   html:
+      theme:
+         dark: darkly
+         light: flatly
+      css: styles.css
